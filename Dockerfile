@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM python:3.9-alpine
 
 #python and pip uploads
 RUN apk add --no-cache python3-dev \
@@ -8,6 +8,6 @@ WORKDIR /app
 
 COPY . /app
 
-RUN pip3 --no-cache-dir install -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 CMD ["python3", "src/app.py"]

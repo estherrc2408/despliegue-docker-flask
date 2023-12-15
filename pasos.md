@@ -24,7 +24,12 @@ pip freeze > requirementstxt
 6. Creamos el archivo Dockerfile, desde donde automatizaremos la creación de la página con Flask.
 
 7. Creamos la imagen a partir del directorio actual poniendo por terminal:
+(dockerdesktop en funcionamiento)
 ```bash
 docker build -t flaskapp:latest .
 ```
 
+8. Ejecutamos el contenedor,
+```bash
+docker run -p 4000:4000 nombre_imagen:etiqueta
+```
