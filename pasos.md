@@ -31,5 +31,10 @@ docker build -t flaskapp:latest .
 
 8. Ejecutamos el contenedor,
 ```bash
-docker run -p 4000:4000 nombre_imagen:etiqueta
+docker run -p 4000:4000 flaskapp:latest
+```
+
+9. Comprobamos que la página está funcionando accediendo a:
+```
+http://localhost:4000/users
 ```
