@@ -18,7 +18,7 @@ cd Scripts
 
 5. Creamos el archivo requirements.txt con las versiones de cada biblioteca usada por nuestro programa
 ```bash
-pip freeze > requirementstxt
+pip freeze > requirements.txt
 ```
 
 6. Creamos el archivo Dockerfile, desde donde automatizaremos la creación de la página con Flask.
@@ -29,7 +29,7 @@ pip freeze > requirementstxt
 docker build -t flaskapp:latest .
 ```
 
-8. Ejecutamos el contenedor,
+8. Ejecutamos el contenedor
 ```bash
 docker run -p 4000:4000 flaskapp:latest
 ```
