@@ -1,4 +1,4 @@
-###Despliegue de una app básica en Flask con Docker
+### Despliegue de una app básica en Flask con Docker
 
 Dividiendo las tareas del siguiente proyecto por dificultad y estado del proceso en Jira llevaremos a cabo el despliegue de una aplicación básica con Flask (python3) y Docker. Haciendo un seguimiento del proyecto mediante GitHub (repositorio: https://github.com/estherrc2408/despliegue-docker-flask.git)
 
@@ -27,3 +27,18 @@ docker run -p 4000:4000 flaskapp:latest
 ```
 http://localhost:4000/users
 ```
+
+5. *En caso de querer parar el contenedor y borrar contenedor e imagen*:
+*Parar contenedor:*
+```bash
+docker stop flaskapp
+```
+*Borrar contenedor (sustituyendo flaskapp por su CONTAINER ID):*
+```bash
+docker rm flaskapp
+```
+*Borrar imagen:*
+```bash
+docker rmi flaskapp
+```
+
